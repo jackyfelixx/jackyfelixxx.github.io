@@ -1,35 +1,64 @@
 body {
     margin: 0;
     line-height: normal;
+    font-family: 'Poppins', 'Montserrat', 'Century Gothic';
+    text-align: left;
+    font-size: 24px;
+    color: #FAFAFA;
+    background-color: #0d1218;
   }
-  
-  :root {
-    /* fonts */
-    --font-poppins: Poppins;
-  
-    /* font sizes */
-    --font-size-13xl: 32px;
-    --font-size-53xl: 72px;
-    --font-size-5xl: 24px;
-    --font-size-lg: 18px;
-  
-    /* Colors */
-    --color-white: #fff;
-    --color-gray-100: #fafafa;
-    --color-gray-200: #1b222b;
-    --color-gray-300: #0d1218;
-    --color-gray-400: rgba(255, 255, 255, 0.5);
-  
-    /* Paddings */
-    --padding-xs: 12px;
-    --padding-13xl: 32px;
-  
-    /* border radiuses */
-    --br-xs: 12px;
-    --br-xl: 20px;
-  }
-  
 
+  .navbar {
+    position: fixed;
+    top: 0px;
+    left: calc(50% - 720px);
+    width: 1440px;
+    height: 80px;
+    text-align: center;
+    font-size: 32px;
+    z-index: 10;
+  }
+  .navbar-section {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #0d1218;
+    width: 1440px;
+    height: 80px;
+  }
+  .navbar-menu {
+    position: absolute;
+    height: 50;
+    width: 1216;
+    margin: 16px 112px;
+  }
+  .menu_title {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-weight: 600;
+    width: 212px;
+  }
+  .menu {
+    position: absolute;
+    top: 0px;
+    left: 428px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    color: #FAFAFA;
+  }
+  .menu_link {
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+ 
 .section {
     position: absolute;
     top: 0px;
@@ -37,175 +66,399 @@ body {
     background-color: #0D1218;
     width: 1440px;
     height: 948px;
+    z-index: -10;
   }
-  .github-icon {
-    position: relative;
-    width: 52px;
-    height: 52px;
-    object-fit: cover;
-  }
-  .whatsapp-icon {
-    position: relative;
-    width: 53px;
-    height: 52px;
-    object-fit: cover;
-  }
-  .component-1 {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 162.5px);
-    background-color: #0D1218;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 16px;
-  }
-  .contact-items {
-    position: absolute;
-    top: 864px;
-    left: 557px;
-    width: 325px;
-    height: 52px;
-  }
-  .px-semibold {
-    position: relative;
-    line-height: 31px;
-    font-weight: 600;
-  }
-  .send-button {
-    position: absolute;
-    height: 13.22%;
-    width: 37.77%;
-    top: 79.09%;
-    right: 31.12%;
-    bottom: 7.69%;
-    left: 31.12%;
-    border-radius: var(--br-xs);
-    background: linear-gradient(180deg, #51ab51, #288a6b);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    padding: var(--padding-xs) var(--padding-13xl);
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-  }
-  .contact-rectangle {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    left: 0%;
-    background-color: var(--color-gray-400);
-  }
-  .px-medium {
-    position: absolute;
-    height: 25.34%;
-    width: 42.49%;
-    top: 6.16%;
-    left: 3.43%;
-    line-height: 152.5%;
-    font-weight: 500;
-    display: inline-block;
-  }
-  .message-box {
-    position: absolute;
-    height: 39.66%;
-    width: 100%;
-    top: 35.58%;
-    right: 0%;
-    bottom: 24.76%;
-    left: 0%;
-  }
-  .px-medium1 {
-    position: absolute;
-    width: 16.95%;
-    top: 17.24%;
-    left: 3.43%;
-    line-height: 152.5%;
-    font-weight: 500;
-    display: inline-block;
-  }
-  .email-box {
-    position: absolute;
-    height: 13.94%;
-    width: 100%;
-    top: 17.79%;
-    right: 0%;
-    bottom: 68.27%;
-    left: 0%;
-  }
-  .px-medium2 {
-    position: absolute;
-    width: 29.4%;
-    top: 18.97%;
-    left: 3.43%;
-    line-height: 152.5%;
-    font-weight: 500;
-    display: inline-block;
-  }
-  .name-box {
-    position: absolute;
-    height: 13.94%;
-    width: 100%;
-    top: 0%;
-    right: 0%;
-    bottom: 86.06%;
-    left: 0%;
-  }
-  .contact-input {
-    position: absolute;
-    top: 363px;
-    left: calc(50% - 296px);
-    width: 592px;
-    height: 416px;
-  }
-  .px-medium3 {
-    position: absolute;
-    top: 103px;
-    left: 0px;
-    line-height: 152.5%;
-    font-weight: 500;
-    display: inline-block;
-    width: 864px;
-  }
-  .px-bold {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 400px);
-    font-size: var(--font-size-53xl);
-    line-height: 87px;
-    display: inline-block;
-    width: 800px;
-  }
-  .contact-title {
-    position: absolute;
-    top: 122px;
-    left: 288px;
-    width: 864px;
-    height: 177px;
-    text-align: center;
-    color: var(--color-gray-100);
-  }
-  .contact {
-    position: absolute;
-    top: 4418px;
-    left: calc(50% - 720px);
-    width: 1440px;
-    height: 948px;
-    color: var(--color-white);
-  }
-  .section1 {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 720px);
-    background-color: #0D1218;
-    width: 1440px;
-    height: 948px;
-  }
+
+/*Home-Page*/
+.home {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 948px;
+}
+.home-profile-icon {
+  position: absolute;
+  top: 128px;
+  left: 710px;
+  width: 670px;
+  height: 850px;
+}
+.home-desc {
+  position: absolute;
+  top: 272px;
+  left: 112px;
+  width: 680px;
+  height: 400px;
+}
+.home-title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 72px;
+  line-height: 80px;
+}
+.divider-icon {
+  position: absolute;
+  top: 188px;
+  left: 0px;
+  width: 352px;
+  height: 4px;
+}
+.home-caption {
+  position: absolute;
+  top: 206px;
+  left: 0px;
+  font-weight: 500;
+  display: inline-block;
+  width: 600px;
+}
+.contact-button {
+  position: absolute;
+  top: 352px;
+  left: 0px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #51ab51, #288a6b);
+  width: 208px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 32px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/*Services*/
+.services {
+  position: absolute;
+  top: 948px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 948px;
+  text-align: center;
+  font-size: 32px;
+}
+.services-square {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 12px;
+  background-color: #1b222b;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.79);
+  width: 280px;
+  height: 280px;
+}
+.px-bold11 {
+  position: absolute;
+  top: 160px;
+  left: 1px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 38px;
+}
+.editing-pict-icon {
+  position: absolute;
+  height: 62.43%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 37.57%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.editing-component {
+  position: absolute;
+  top: 33px;
+  left: 78px;
+  width: 121px;
+  height: 195px;
+}
+.editing {
+  position: absolute;
+  top: 312px;
+  left: 936px;
+  width: 280px;
+  height: 280px;
+}
+.px-bold12 {
+  position: absolute;
+  top: 163px;
+  left: 18px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  height: 38px;
+}
+.uiux-pict-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 133px;
+  height: 134px;
+  object-fit: cover;
+}
+.uiux-component {
+  position: absolute;
+  top: 27px;
+  left: 72px;
+  width: 133px;
+  height: 201px;
+}
+.uiux1 {
+  position: absolute;
+  top: 312px;
+  left: 624px;
+  width: 280px;
+  height: 280px;
+}
+.px-bold13 {
+  position: absolute;
+  top: 161px;
+  left: 0px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 215px;
+  height: 36px;
+}
+.socialmedia-pict-icon {
+  position: absolute;
+  top: 0px;
+  left: 43px;
+  width: 129px;
+  height: 129px;
+  object-fit: cover;
+}
+.socialmedia-component {
+  position: absolute;
+  top: 30px;
+  left: 32px;
+  width: 215px;
+  height: 200px;
+}
+.socialmedia1 {
+  position: absolute;
+  top: 312px;
+  left: 312px;
+  width: 280px;
+  height: 280px;
+}
+.px-bold14 {
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 208px;
+  height: 38px;
+}
+.copywriting-pict-icon {
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  width: 129px;
+  height: 129px;
+  object-fit: cover;
+}
+.copywriting-component {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  width: 208px;
+  height: 198px;
+}
+.copywriting {
+  position: absolute;
+  top: 312px;
+  left: 0px;
+  width: 280px;
+  height: 280px;
+}
+.px-bold-txt {
+  line-break: anywhere;
+  width: 100%;
+}
+.px-bold15 {
+  position: absolute;
+  top: 134px;
+  left: 0px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  width: 134px;
+  height: 76px;
+}
+.graphicdesign-pict-icon {
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  width: 119px;
+  height: 120px;
+  object-fit: cover;
+}
+.graphicdesign-component {
+  position: absolute;
+  top: 38px;
+  left: 72px;
+  width: 134px;
+  height: 210px;
+}
+.graphicdesign {
+  position: absolute;
+  top: 0px;
+  left: 936px;
+  width: 280px;
+  height: 280px;
+}
+.px-bold16 {
+  position: absolute;
+  top: 138.01px;
+  left: 0px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  width: 147px;
+  height: 76px;
+}
+.contentcreation-pict-icon {
+  position: absolute;
+  top: 0px;
+  left: 11px;
+  width: 126px;
+  height: 127px;
+  object-fit: cover;
+}
+.contentcreation-component {
+  position: absolute;
+  top: 34px;
+  left: 64px;
+  width: 147px;
+  height: 214px;
+}
+.contentcreation {
+  position: absolute;
+  top: 0px;
+  left: 624px;
+  width: 280px;
+  height: 280px;
+}
+.px-bold17 {
+  position: absolute;
+  top: 138px;
+  left: 0px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  width: 175px;
+  height: 76px;
+}
+.contentmarketing-pict-icon {
+  position: absolute;
+  top: 0px;
+  left: 24px;
+  width: 127px;
+  height: 128px;
+  object-fit: cover;
+}
+.contentmarketing-component {
+  position: absolute;
+  top: 34px;
+  left: 51px;
+  width: 175px;
+  height: 214px;
+}
+.contentmarketing {
+  position: absolute;
+  top: 0px;
+  left: 312px;
+  width: 280px;
+  height: 280px;
+}
+.px-bold18 {
+  position: absolute;
+  top: 134px;
+  left: 0px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  width: 175px;
+  height: 76px;
+}
+.digitalmarketing-pict-icon {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  width: 115px;
+  height: 120px;
+  object-fit: cover;
+}
+.digitalmarketing-component {
+  position: absolute;
+  top: 38px;
+  left: 51px;
+  width: 175px;
+  height: 210px;
+}
+.digitalmarketing {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 280px;
+  height: 280px;
+}
+.services-components {
+  position: absolute;
+  top: 268px;
+  left: 112px;
+  width: 1216px;
+  height: 592px;
+}
+.services-title {
+  position: absolute;
+  top: 74px;
+  left: 0px;
+  font-weight: 500;
+  display: inline-block;
+  width: 807px;
+}
+.services-desc {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 48px;
+}
+.myservices {
+  position: absolute;
+  top: 88px;
+  left: 112px;
+  width: 807px;
+  height: 148px;
+  text-align: left;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+/*Projects*/
   .feeds-ptpapasari-icon {
     position: absolute;
     height: 100%;
@@ -247,7 +500,7 @@ body {
     right: 76.81%;
     bottom: 52.44%;
     left: 0%;
-    background-color: var(--color-white);
+    background-color: #FAFAFA;
   }
   .avatar-rectangle1 {
     position: absolute;
@@ -257,7 +510,7 @@ body {
     right: 51.15%;
     bottom: 52.44%;
     left: 25.58%;
-    background-color: var(--color-white);
+    background-color: #FAFAFA;
   }
   .avatar-rectangle2 {
     position: absolute;
@@ -267,7 +520,7 @@ body {
     right: 25.58%;
     bottom: 52.44%;
     left: 51.23%;
-    background-color: var(--color-white);
+    background-color: #FAFAFA;
   }
   .avatar-rectangle3 {
     position: absolute;
@@ -277,7 +530,7 @@ body {
     right: 0%;
     bottom: 52.44%;
     left: 76.81%;
-    background-color: var(--color-white);
+    background-color: #FAFAFA;
   }
   .avatar-rectangle4 {
     position: absolute;
@@ -287,7 +540,7 @@ body {
     right: 76.81%;
     bottom: 0%;
     left: 0%;
-    background-color: var(--color-white);
+    background-color: #FAFAFA;
   }
   .avatar-rectangle5 {
     position: absolute;
@@ -297,7 +550,7 @@ body {
     right: 51.15%;
     bottom: 0%;
     left: 25.58%;
-    background-color: var(--color-white);
+    background-color: #FAFAFA;
   }
   .avatar-rectangle6 {
     position: absolute;
@@ -307,7 +560,7 @@ body {
     right: 25.58%;
     bottom: 0%;
     left: 51.23%;
-    background-color: var(--color-white);
+    background-color: #FAFAFA;
   }
   .avatar-rectangle7 {
     position: absolute;
@@ -317,7 +570,7 @@ body {
     right: 0%;
     bottom: 0%;
     left: 76.81%;
-    background-color: var(--color-white);
+    background-color: #FAFAFA;
   }
   .avatar-jt-1 {
     position: absolute;
@@ -586,13 +839,13 @@ body {
     width: 1440px;
     height: 948px;
     text-align: center;
-    font-size: var(--font-size-53xl);
+    font-size: 72px;
   }
   .section2 {
     position: absolute;
     top: 0px;
     left: calc(50% - 720px);
-    background-color: var(--color-gray-300);
+    background-color: #0d1218;
     width: 1440px;
     height: 787px;
   }
@@ -600,21 +853,21 @@ body {
     position: absolute;
     top: 64px;
     left: 0px;
-    line-height: 152.5%;
+  
     font-weight: 500;
   }
   .px-bold2 {
     position: absolute;
     top: 27px;
     left: 0px;
-    font-size: var(--font-size-5xl);
-    line-height: 152.5%;
+    font-size: 24px;
+  
   }
   .px-medium5 {
     position: absolute;
     top: 0px;
     left: 0px;
-    line-height: 152.5%;
+  
     font-weight: 500;
   }
   .widyadharma {
@@ -642,8 +895,8 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    font-size: var(--font-size-13xl);
-    line-height: 152.5%;
+    font-size: 32px;
+  
   }
   .education {
     position: absolute;
@@ -698,8 +951,8 @@ body {
     position: absolute;
     top: 0px;
     left: 1px;
-    font-size: var(--font-size-13xl);
-    line-height: 152.5%;
+    font-size: 32px;
+  
   }
   .experience {
     position: absolute;
@@ -766,7 +1019,7 @@ body {
     position: absolute;
     top: 0px;
     left: 7px;
-    line-height: 152.5%;
+  
   }
   .profesional-skills {
     position: absolute;
@@ -774,7 +1027,7 @@ body {
     left: calc(50% + 12.5px);
     width: 341.91px;
     height: 289px;
-    font-size: var(--font-size-13xl);
+    font-size: 32px;
   }
   .education-skills {
     position: absolute;
@@ -801,7 +1054,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    border-radius: var(--br-xl);
+    border-radius: 20px;
     background-color: #d9d9d9;
     width: 528.94px;
     height: 210.53px;
@@ -810,8 +1063,8 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    border-radius: var(--br-xl);
-    border: 2px solid var(--color-gray-100);
+    border-radius: 20px;
+    border: 2px solid #FAFAFA;
     box-sizing: border-box;
     width: 218.98px;
     height: 52.63px;
@@ -821,7 +1074,7 @@ body {
     top: 0px;
     left: 23.27px;
     letter-spacing: 0.08em;
-    line-height: 152.5%;
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -842,14 +1095,14 @@ body {
     width: 530px;
     height: 280px;
     text-align: center;
-    font-size: var(--font-size-13xl);
-    color: var(--color-white);
+    font-size: 32px;
+    color: #FAFAFA;
   }
   .px-medium12 {
     position: absolute;
     top: calc(50% - 13.86px);
     left: 47px;
-    line-height: 152.5%;
+  
     font-weight: 500;
   }
   .instagram-icon1 {
@@ -875,7 +1128,7 @@ body {
     position: absolute;
     top: calc(50% - 13.5px);
     left: 47px;
-    line-height: 152.5%;
+  
     font-weight: 500;
   }
   .email-icon {
@@ -901,7 +1154,7 @@ body {
     position: absolute;
     top: calc(50% - 13.5px);
     left: 46px;
-    line-height: 152.5%;
+  
     font-weight: 500;
   }
   .phone-icon {
@@ -927,7 +1180,7 @@ body {
     position: absolute;
     top: calc(50% - 13px);
     left: 48px;
-    line-height: 152.5%;
+  
     font-weight: 500;
     color: inherit;
     text-decoration: none;
@@ -969,7 +1222,7 @@ body {
     position: absolute;
     top: 88px;
     left: 0px;
-    line-height: 152.5%;
+  
     font-weight: 500;
     display: inline-block;
     width: 520px;
@@ -978,7 +1231,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    font-size: var(--font-size-53xl);
+    font-size: 72px;
     line-height: 64px;
   }
   .about1 {
@@ -1001,468 +1254,129 @@ body {
     left: calc(50% - 720px);
     width: 1440px;
     height: 1574px;
-    font-size: var(--font-size-lg);
+    font-size: 18px;
   }
-  .services-square {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: var(--br-xs);
-    background-color: var(--color-gray-200);
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.79);
-    width: 280px;
-    height: 280px;
-  }
-  .px-bold11 {
-    position: absolute;
-    top: 157.73px;
-    left: 0.97px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 119.83px;
-    height: 38.08px;
-  }
-  .editing-pict-icon {
-    position: absolute;
-    height: 62.43%;
-    width: 100%;
-    top: 0%;
-    right: 0%;
-    bottom: 37.57%;
-    left: 0%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  .editing-component {
-    position: absolute;
-    top: 33.52px;
-    left: 78.6px;
-    width: 121.82px;
-    height: 195.81px;
-  }
-  .editing {
-    position: absolute;
-    top: 312px;
-    left: 936px;
-    width: 280px;
-    height: 280px;
-  }
-  .px-bold12 {
-    position: absolute;
-    top: 163.65px;
-    left: 18.65px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 95.87px;
-    height: 38.08px;
-  }
-  .uiux-pict-icon {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 133.61px;
-    height: 134.08px;
-    object-fit: cover;
-  }
-  .uiux-component {
-    position: absolute;
-    top: 27.61px;
-    left: 72.7px;
-    width: 133.61px;
-    height: 201.73px;
-  }
-  .uiux1 {
-    position: absolute;
-    top: 312px;
-    left: 624px;
-    width: 280px;
-    height: 280px;
-  }
-  .px-bold13 {
-    position: absolute;
-    top: 161.69px;
-    left: 0px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 215.16px;
-    height: 37.46px;
-  }
-  .socialmedia-pict-icon {
-    position: absolute;
-    top: 0px;
-    left: 43.23px;
-    width: 128.7px;
-    height: 129.15px;
-    object-fit: cover;
-  }
-  .socialmedia-component {
-    position: absolute;
-    top: 30.56px;
-    left: 32.42px;
-    width: 215.16px;
-    height: 199.15px;
-  }
-  .socialmedia1 {
-    position: absolute;
-    top: 312px;
-    left: 312px;
-    width: 280px;
-    height: 280px;
-  }
-  .px-bold14 {
-    position: absolute;
-    top: 160.69px;
-    left: 0px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 208.71px;
-    height: 38.08px;
-  }
-  .copywriting-pict-icon {
-    position: absolute;
-    top: 0px;
-    left: 40.31px;
-    width: 128.7px;
-    height: 129.15px;
-    object-fit: cover;
-  }
-  .copywriting-component {
-    position: absolute;
-    top: 30.56px;
-    left: 35.34px;
-    width: 208.71px;
-    height: 198.77px;
-  }
-  .copywriting {
-    position: absolute;
-    top: 312px;
-    left: 0px;
-    width: 280px;
-    height: 280px;
-  }
-  .px-bold-txt {
-    line-break: anywhere;
-    width: 100%;
-  }
-  .px-bold15 {
-    position: absolute;
-    top: 134.07px;
-    left: 0px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    width: 134.81px;
-    height: 76.16px;
-  }
-  .graphicdesign-pict-icon {
-    position: absolute;
-    top: 0px;
-    left: 6.89px;
-    width: 119.86px;
-    height: 120.28px;
-    object-fit: cover;
-  }
-  .graphicdesign-component {
-    position: absolute;
-    top: 38.45px;
-    left: 72.69px;
-    width: 134.81px;
-    height: 210.23px;
-  }
-  .graphicdesign {
-    position: absolute;
-    top: 0px;
-    left: 936px;
-    width: 280px;
-    height: 280px;
-  }
-  .px-bold16 {
-    position: absolute;
-    top: 138.01px;
-    left: 0px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    width: 147.8px;
-    height: 76.16px;
-  }
-  .contentcreation-pict-icon {
-    position: absolute;
-    top: 0px;
-    left: 11.82px;
-    width: 126.74px;
-    height: 127.18px;
-    object-fit: cover;
-  }
-  .contentcreation-component {
-    position: absolute;
-    top: 34.51px;
-    left: 64.81px;
-    width: 147.8px;
-    height: 214.17px;
-  }
-  .contentcreation {
-    position: absolute;
-    top: 0px;
-    left: 624px;
-    width: 280px;
-    height: 280px;
-  }
-  .px-bold17 {
-    position: absolute;
-    top: 138.01px;
-    left: 0px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    width: 175.76px;
-    height: 76.16px;
-  }
-  .contentmarketing-pict-icon {
-    position: absolute;
-    top: 0px;
-    left: 24.59px;
-    width: 127.72px;
-    height: 128.17px;
-    object-fit: cover;
-  }
-  .contentmarketing-component {
-    position: absolute;
-    top: 34.51px;
-    left: 51.06px;
-    width: 175.76px;
-    height: 214.17px;
-  }
-  .contentmarketing {
-    position: absolute;
-    top: 0px;
-    left: 312px;
-    width: 280px;
-    height: 280px;
-  }
-  .px-bold18 {
-    position: absolute;
-    top: 134.07px;
-    left: 0px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    width: 175.76px;
-    height: 76.16px;
-  }
-  .digitalmarketing-pict-icon {
-    position: absolute;
-    top: 0px;
-    left: 30.49px;
-    width: 115.93px;
-    height: 120.28px;
-    object-fit: cover;
-  }
-  .digitalmarketing-component {
-    position: absolute;
-    top: 38.45px;
-    left: 51.06px;
-    width: 175.76px;
-    height: 210.23px;
-  }
-  .digitalmarketing {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 280px;
-    height: 280px;
-  }
-  .services-components {
-    position: absolute;
-    top: 268px;
-    left: 112px;
-    width: 1216px;
-    height: 592px;
-  }
-  .px-medium17 {
-    position: absolute;
-    top: 74px;
-    left: 0px;
-    line-height: 152.5%;
-    font-weight: 500;
-    display: inline-block;
-    width: 807px;
-  }
-  .px-bold19 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: 48px;
-    line-height: 64px;
-  }
-  .myservices {
-    position: absolute;
-    top: 88px;
-    left: 112px;
-    width: 807px;
-    height: 148px;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-  }
-  .services {
-    position: absolute;
-    top: 948px;
-    left: calc(50% - 720px);
-    width: 1440px;
-    height: 948px;
-    text-align: center;
-    font-size: var(--font-size-13xl);
-  }
-  .contact-button {
-    position: absolute;
-    top: 349px;
-    left: 0px;
-    border-radius: var(--br-xs);
-    background: linear-gradient(180deg, #51ab51, #288a6b);
-    width: 208px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    padding: var(--padding-xs) var(--padding-13xl);
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: var(--color-white);
-  }
-  .px-medium18 {
-    position: absolute;
-    top: 206px;
-    left: 0px;
-    line-height: 152.5%;
-    font-weight: 500;
-    display: inline-block;
-    width: 600px;
-  }
-  .divider-icon {
-    position: absolute;
-    top: 188px;
-    left: 0px;
-    width: 343px;
-    height: 4px;
-  }
-  .px-bold20 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    font-size: var(--font-size-53xl);
-    line-height: 87px;
-  }
-  .home-title {
-    position: absolute;
-    top: 272px;
-    left: 112px;
-    width: 681px;
-    height: 404px;
-  }
-  .home-profile-icon {
-    position: absolute;
-    top: 98px;
-    left: 695px;
-    width: 671px;
-    height: 850px;
-  }
-  .home {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 720px);
-    width: 1440px;
-    height: 948px;
-  }
-  .navbar-section {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: var(--color-gray-300);
-    width: 1440px;
-    height: 80px;
-  }
-  .px-semibold2 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    line-height: 152.5%;
-    font-weight: 600;
-  }
-  .px-semibold3 {
-    position: relative;
-    line-height: 152.5%;
-    font-weight: 600;
-    display: inline-block;
-    width: 97px;
-    height: 49px;
-    flex-shrink: 0;
-    cursor: pointer;
-  }
-  .px-semibold4 {
-    position: relative;
-    line-height: 152.5%;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  .px-semibold6 {
-    position: relative;
-    line-height: 152.5%;
-    font-weight: 600;
-    display: inline-block;
-    width: 132px;
-    height: 49px;
-    flex-shrink: 0;
-    cursor: pointer;
-  }
-  .menu {
-    position: absolute;
-    top: 0px;
-    left: 428px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
-    color: var(--color-white);
-  }
-  .navbar-menu {
-    position: absolute;
-    height: 61.25%;
-    width: 84.58%;
-    top: 20%;
-    right: 7.78%;
-    bottom: 18.75%;
-    left: 7.64%;
-  }
-  .navbar {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 720px);
-    width: 1440px;
-    height: 80px;
-    text-align: center;
-    font-size: var(--font-size-13xl);
-  }
-  .my-portfolio-code {
-    position: relative;
-    background-color: var(--color-white);
-    width: 100%;
-    height: 5366px;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--color-gray-100);
-    font-family: var(--font-poppins);
-  }
-  
+ 
+
+/*Contact footer*/
+.contact-items {
+  position: absolute;
+  top: 864px;
+  left: 560px;
+  width: 320px;
+  height: 52px;
+}
+.contact-component {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 162.5px);
+  background-color: #0D1218;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.contact-icon {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+}
+/*Contact*/
+.contact {
+  position: absolute;
+  top: 4418px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 948px;
+  color: #FAFAFA;
+}
+.button-text {
+  position: relative;
+  font-weight: 600;
+}
+.send-button {
+  position: absolute;
+  height: 64px;
+  width: 224px;
+  margin: 327px 164px 32px 164px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #51ab51, #288a6b);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 32px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.contact-rectangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.name-box {
+  position: absolute;
+  height: 58px;
+  width: 100%;
+  top: 0%;
+}
+.email-box {
+  position: absolute;
+  height: 58px;
+  width: 100%;
+  top: 74px;
+}
+.message-box {
+  position: absolute;
+  height: 160px;
+  width: 100%;
+  top: 148px;
+}
+.placeholder {
+  position: absolute;
+  width: 212px;
+  top: 10px;
+  left: 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+.contact-input {
+  position: absolute;
+  top: 363px;
+  left: calc(50% - 296px);
+  width: 592px;
+  height: 416px;
+}
+.contact-caption {
+  position: absolute;
+  top: 103px;
+  left: 0px;
+  font-weight: 500;
+  display: inline-block;
+  width: 864px;
+}
+.contact-title {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 400px);
+  font-size: 72px;
+  line-height: 87px;
+  display: inline-block;
+  width: 800px;
+}
+.contact-description {
+  position: absolute;
+  top: 122px;
+  left: 288px;
+  width: 864px;
+  height: 177px;
+  text-align: center;
+  color: #FAFAFA;
+}
+
+
+
