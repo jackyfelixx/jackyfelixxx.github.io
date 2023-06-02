@@ -4,6 +4,7 @@ body {
     font-family: 'Poppins', 'Montserrat', 'Century Gothic';
     text-align: left;
     font-size: 24px;
+    width: 100%;
     color: #FAFAFA;
     background-color: #0d1218;
   }
